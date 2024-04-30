@@ -4,21 +4,31 @@ body{
     padding: 0;
 }
 
-.menu-bar{
-    background: blanchedalmond;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    box-shadow: 3px 3px 5px 2px gray;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+
+.page-content{
+    max-width: 1560px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.menu-links{
-    display: inline;
-    justify-content: center;
+
+.menu-bar{
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 3px 5px 2px gray;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    overflow: hidden;
 }
+
+
+
+
 
 .menu-links a{
     text-decoration: none;
@@ -27,7 +37,8 @@ body{
 /*Opening*/
 
 .opening-image{
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .img-text{
@@ -46,13 +57,23 @@ body{
 
 /*Projects*/
 
-.first-line, .second-line{
-    display: flex;
-    justify-content: center;
+.projects{
+    max-width: 1500px;
+    overflow: hidden;
 }
 
+
+
+.first-line, .second-line{
+    display: flex;
+    gap: 5px;
+}
+
+
+
 .first-line img, .second-line img{
-    width: 350px;
+    width: 380px;
+    gap: 5px;
 }
 
 .first-img-info, .second-img-info{
@@ -73,8 +94,16 @@ body{
 }
 
 .card{
-    max-width: 340px;
+    max-width: 380px;
     margin: 10px;
+}
+
+
+.team-button{
+    width: 100%;
+    padding: 10px;
+    border-style: none;
+    border-radius: 5px;
 }
 
 /*Contact*/
@@ -85,4 +114,14 @@ body{
 
 .last-img{
     text-align: center;
+}
+
+
+footer{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
